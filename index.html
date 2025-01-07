@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saguitech</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nfs-header">
+      <img width="300px" src="https://www.saguitech.com.br/img/logo.png" />
+      <h1 class="nfs-title">Nota Fiscal de Serviço (NFS-e)</h1>
+    </div>
+    <form class="form" id="nfs-form">
+      <label for="sale-value">Valor da Venda:</label>
+      <input
+        class="nfs-input"
+        type="number"
+        id="sale-value"
+        name="sale-value"
+        required
+      /><br />
+      <label for="itens">Itens Vendidos:</label>
+      <input
+        class="nfs-input"
+        type="text"
+        id="itens"
+        name="itens"
+        required
+      /><br />
+      <label for="irpf">Porcentagem do Imposto (IRPF):</label>
+      <input
+        class="nfs-input"
+        type="number"
+        id="irpf"
+        name="irpf"
+        required
+      /><br />
+      <label for="pis">Porcentagem do Imposto (PIS):</label>
+      <input
+        class="nfs-input"
+        type="number"
+        id="pis"
+        name="pis"
+        required
+      /><br />
+      <label for="cofins">Porcentagem do Imposto (COFINS):</label>
+      <input
+        class="nfs-input"
+        type="number"
+        id="cofins"
+        name="cofins"
+        required
+      /><br />
+      <label for="inss">Porcentagem do Imposto (INSS):</label>
+      <input
+        class="nfs-input"
+        type="number"
+        id="inss"
+        name="inss"
+        required
+      /><br />
+      <label for="issqn">Porcentagem do Imposto (ISSQN):</label>
+      <input
+        class="nfs-input"
+        type="number"
+        id="issqn"
+        name="issqn"
+        required
+      /><br />
+      <button
+        class="nfs-button"
+        type="button "
+        onclick="handleGenerateInvoice()"
+      >
+        Gerar Nota Fiscal
+      </button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
